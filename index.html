@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App</title>
+  
+  <script type="module" crossorigin src="assets/page1-17a2b672.js"></script>
+  <link rel="modulepreload" crossorigin href="assets/three.module-635cce14.js">
+  <link rel="stylesheet" href="assets/three-8b42761d.css">
+</head>
+
+<body>
+  <div class="innen">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12h18M3 6h18M3 18h18"></path>
+    </svg>
+    
+    <h2 style="font-family: gabriola; ">Willkommen in unserem Nachthimmel</h2>
+    <ul>
+      <li>
+        <p>Navigieren sie mit den Maus oder Display</p>
+      </li>
+    </ul>
+    <div class="planeten">
+    <ul>
+      <li id="planet1" ><a href="merkur.html" onclick="start(1)">Merkur</a> </li>
+      <li id="planet2"><a href="venus.html">Venus</a> </li>
+      <li id="planet3"><a href="erde.html">Erde</a> </li>
+      <li id="planet4"> <a href="mars.html" onclick="start(4)">Mars</a> </li>
+      <li id="planet5"> <a href="jupiter.html">Jupiter</a> </li>
+      <li id="planet6"> <a href="saturn.html">Saturn</a></li>
+      <li id="planet7"> <a href="uranus.html">Uranus</a> </li>
+      <li id="planet8"> <a href="neptun.html">Neptun</a> </li>
+    </ul>
+    </div>
+    
+<p style="color:white; margin-left: 10px; margin-top: 50px;" onclick="help()">help</p>
+<script>
+  function help(){
+    alert("Zoomen mit Doppel-click/tap \n Und bewegen mit der maus oder duch Swipen")
+  }
+</script>
+  </div>
+  <div class="aussen">
+    <canvas id="bg"></canvas>
+  </div>
+  <script>
+    let div = document.getElementsByClassName("innen");
+    let canvas = document.getElementById("bg");
+    canvas.style.left ="5.1vw"
+    div[0].addEventListener("click", () => {
+      event == true;
+      
+      div[0].style.width = "10vw"
+      if (div[0].style.width == "5vw" || event) {
+        div[0].style.width = "50vw";
+        canvas.style.left ="50.1vw"
+        event = false;
+        div[0].style.color = "white"
+
+      } else if (div[0].style.width == "10vw") {
+        div[0].style.width = "5vw";
+        div[0].style.color = "transparent"
+        canvas.style.left ="5.1vw"
+        event = true
+      }
+    });
+  </script>
+</body>
+
+</html>

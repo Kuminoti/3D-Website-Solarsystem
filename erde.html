@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+
+    <title>Document</title>
+  <script type="module" crossorigin src="assets/page4-569e150b.js"></script>
+  <link rel="modulepreload" crossorigin href="assets/three.module-635cce14.js">
+  <link rel="stylesheet" href="assets/three-8b42761d.css">
+</head>
+<body>
+    <div class="innen">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12h18M3 6h18M3 18h18"></path>
+      </svg>
+        <h1>Die Erde</h1>
+        <div class="artikel">
+            <h2>Allgemeines</h2>
+            <article>
+                Auch genannt "der blaue Planet", <br>
+                ist der Heimatplanet der Menschen <br>
+                er ist von der Sonne aus der dritte<br>
+                Planet in unserem Sonnensystem <br>
+                <br>
+                Er liegt zwischen Mars und Venus <br>
+                und ist der einzig bekannte Planet <br>
+                auf dem es intiligentes Leben gibt. 
+                <br>
+            </article>
+
+            <h2>Astrologische Bedeutung</h2>
+            <article>
+                Ich hab kein Plan von dem Zeug lol <br>
+                deshalb schreib ich irgend wat hier hin <br>
+                Julia hilf mir mal ... <br>
+            </article>
+        </div>
+        <div class="listen">
+         
+            <h2 class="weiter-lesen">Weiter lesen:</h2>
+            <ul>
+                <li id="planet2"> <a href="venus.html">2.Venus die Göttin der Schönheit</a> </li>
+                <li id="planet4"><a href="mars.html">4.Der Mars der rote Planet</a> </li>
+                <li> <a href="index.html"> Zurück zum Start</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="aussen">
+        <canvas id="bg"></canvas>
+    </div>
+    <script>
+        let div = document.getElementsByClassName("innen");
+        let canvas = document.getElementById("bg");
+        canvas.style.left ="5.1vw"
+        div[0].addEventListener("click", () => {
+          event == true;
+          
+          div[0].style.width = "10vw"
+          if (div[0].style.width == "5vw" || event) {
+            div[0].style.width = "50vw";
+            canvas.style.left ="50.1vw"
+            event = false;
+            div[0].style.color = "white"
+    
+          } else if (div[0].style.width == "10vw") {
+            div[0].style.width = "5vw";
+            div[0].style.color = "transparent"
+            canvas.style.left ="5.1vw"
+            event = true
+          }
+        });
+      </script>
+</body>
+</html>
